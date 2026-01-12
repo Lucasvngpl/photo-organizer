@@ -9,6 +9,10 @@ from tensorflow.keras.applications.efficientnet import preprocess_input
 from tensorflow.keras.preprocessing import image
 import numpy as np
 from PIL import Image
+from config import VARIANCE_THRESHOLD
+
+# Confidence for document detection heuristic
+DOCUMENT_HEURISTIC_CONFIDENCE = 0.5
 
 
 class HomeworkImageClassifier:
@@ -86,8 +90,8 @@ class HomeworkImageClassifier:
             variance = np.var(img_array)
             
             # If variance is very high, it might be a document/whiteboard
-            if variance > 5000:
-                return True, 0.5, "document_heuristic"
+            if variance > VARIANCE_THRESHOLD:
+                return True, DOCUMENT_HEURISTIC_CONFIDENCE, "document_heuristic"
         except Exception:
             pass
         

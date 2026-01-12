@@ -136,8 +136,10 @@ class HomeworkImageClassifier(context: Context) {
 ### PhotoOrganizer.kt
 
 ```kotlin
+import android.content.ContentUris
 import android.content.ContentValues
 import android.content.Context
+import android.net.Uri
 import android.provider.MediaStore
 import kotlinx.coroutines.*
 

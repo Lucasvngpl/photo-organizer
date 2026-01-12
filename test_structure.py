@@ -12,6 +12,9 @@ import os
 # Add parent directory to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
+# Minimum expected README length
+MIN_README_LENGTH = 500
+
 
 class TestClassifierStructure(unittest.TestCase):
     """Test the classifier module structure."""
@@ -183,7 +186,7 @@ class TestProjectStructure(unittest.TestCase):
         self.assertIn('Photo Organizer', content)
         self.assertIn('Installation', content)
         self.assertIn('Usage', content)
-        self.assertGreater(len(content), 500, "README seems too short")
+        self.assertGreater(len(content), MIN_README_LENGTH, "README seems too short")
     
     def test_requirements_txt(self):
         """Test that requirements.txt has necessary dependencies."""
