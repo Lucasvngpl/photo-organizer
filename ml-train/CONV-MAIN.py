@@ -23,20 +23,7 @@ class Conv:
 
         return gpus
 
-    def new_model(self, input_shape=(512, 512)):
-
-        # Load pre-trained EfficientNetB0
-        base_model = tf.keras.applications.EfficientNetB0(
-            include_top=False,      # Remove ImageNet classifier so it replaces the original classifier classes with our own
-            weights="imagenet",     # Use pre-trained weights
-            input_shape=input_shape,
-            pooling="avg"           # Global average pooling → 1280 features
-        )
-        
-        # Freeze base model
-        base_model.trainable = False
-        
-        # Build: EfficientNet → Dense(128) → Dense(1)
+    def new_model(self, input_shape=(4032, 4032)):
         model = tf.keras.models.Sequential([
             base_model,
             tf.keras.layers.Dropout(0.3), 
