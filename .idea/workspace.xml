@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb2ce1f8-1e96-4adc-a300-11c034879939" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ml-train/load.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +159,7 @@
       <workItem from="1768666100217" duration="1490000" />
       <workItem from="1768671260005" duration="5242000" />
       <workItem from="1768680404297" duration="4690000" />
-      <workItem from="1768686325338" duration="961000" />
+      <workItem from="1768686325338" duration="1433000" />
     </task>
     <servers />
   </component>

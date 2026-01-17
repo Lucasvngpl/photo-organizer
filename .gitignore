@@ -1,3 +1,9 @@
-/dataset-processed
-/dataset-full
+# Dataset files (leaving raw data for now)
+/dataset*
+
+# Model files
 *.h5
+
+.idea
+.venv
+.DS_store
