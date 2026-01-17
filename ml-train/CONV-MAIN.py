@@ -22,7 +22,7 @@ class Conv:
 
         return gpus
 
-    def new_model(self, input_shape=(4032, 4032)):
+    def new_model(self, input_shape=(512, 512)):
         model = tf.keras.models.Sequential([
             tf.keras.layers.Input(shape=input_shape),
 
