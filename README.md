@@ -5,3 +5,6 @@ Connected to [Classi-App](https://github.com/Aarnav-07/Classi-App) via TFLite co
 # Metrics
 97% Testing accuracy.\
 100% accuracy on academic images (no false negatives)
+
+# Devpost
+https://devpost.com/software/classi-yh25ua
