@@ -8,3 +8,6 @@ Connected to [Classi-App](https://github.com/Aarnav-07/Classi-App) via TFLite co
 
 # Devpost
 https://devpost.com/software/classi-yh25ua
+
+# Demo
+https://youtu.be/6GF0yKDca9o
